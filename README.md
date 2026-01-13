@@ -9,7 +9,7 @@ test cases, bug reports and test summary reports.
 - API testing
 - Test documentation
 
-## Tools & Skills
+## Tools and Skills
 - Manual Testing
 - API Testing (Postman)
 - SQL (Oracle, SQL Server)
