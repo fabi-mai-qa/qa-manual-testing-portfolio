@@ -57,9 +57,16 @@ Validate that the system correctly calculates the shopping cart total price base
 
 **Scenario Flow:**  
 - User accesses the application.
-- User selects one or more products to add them to the shopping cart.
+- User selects one or more products and adds them to the shopping cart.
 - User updates the quantity of products in the cart.
-- System recalculates the total price accordingly.
+- User removes one of the products from the cart.
+- User empties the shopping cart.
+- User adds one product again to the shopping cart.
+- User refreshes the page.
+- User logs out and logs back into the system.
+- User accesses the shopping cart page again.
+- System maintains data and recalculates the total price accordingly.
 
 **Expected Result:**  
 - The shopping cart total price is updated correctly when products are added, removed, or when quantities are changed.
+
