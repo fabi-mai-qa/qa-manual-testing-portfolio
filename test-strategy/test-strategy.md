@@ -19,7 +19,7 @@ The purpose of this test strategy is to establish consistent testing practices a
 ## Scope of Testing
 
 ### In Scope:
-- Desktop functional testing.
+- Functional testing.
 - API testing (REST and SOAP).
 - Manual test execution.
 - Database validation using SQL.
@@ -53,7 +53,7 @@ The purpose of this test strategy is to establish consistent testing practices a
 ## Test Environment
 
 ### Environments:
-- Dedicated QA/Test environment for desktop application and APIs.
+- Dedicated QA/Test environment for the application under test.
 
 ### Test Data:
 - Dedicated test databases.
@@ -76,7 +76,7 @@ The purpose of this test strategy is to establish consistent testing practices a
 ## Roles and Responsibilities
 
 ### QA Analyst:
-- Define and maintain the test strategy, test plans, and test cases.
+- Define and maintain the test strategy, test plans, test scenarios and test cases.
 - Execute manual functional, exploratory, smoke, and API tests.
 - Validate acceptance criteria and business requirements.
 - Identify, document, and track defects.
