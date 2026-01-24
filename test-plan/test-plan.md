@@ -13,7 +13,7 @@ It defines the scope, approach, resources and schedule for manual functional and
 ## Scope of Testing
 
 ### In Scope:
-- Manual functional testing for the desktop application.
+- Manual functional testing for the application under test.
 - API testing (REST and SOAP).
 - Database validation using SQL.
 - Smoke and exploratory testing.
@@ -36,7 +36,7 @@ It defines the scope, approach, resources and schedule for manual functional and
 ## Test Environment
 
 ### Environments:
-- Dedicated QA/Test environment for the desktop application.
+- Dedicated QA/Test environment for the application under test.
 - APIs available for testing in the QA environment.
 - Dedicated test databases.
 
