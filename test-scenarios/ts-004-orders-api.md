@@ -52,7 +52,6 @@ Verify that the Orders API correctly creates and retrieves purchase orders in a 
 	- Boolean: `hasShippingFee`
 - Mandatory fields at order level:
 	- `userId`
-	- `totalPrice`
 - Mandatory fields at orderItems level:
 	- `productId`
 	- `quantity`
@@ -118,4 +117,5 @@ Sum of (quantity × unitPrice for all items)
   "totalPrice": 145.00
 }
 ``` 
+
 
