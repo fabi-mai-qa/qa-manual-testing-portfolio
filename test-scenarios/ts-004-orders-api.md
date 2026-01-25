@@ -44,7 +44,26 @@ Verify that the Orders API correctly creates and retrieves purchase orders in a 
 - Unauthorized access is blocked according to security rules.
 
 **Business Rules:**
-- Each seller included in the order must have a valid shipping configuration.
+- Each `sellerId` included in `orderItems` must have a corresponding entry in `shippingBySeller`.
+- Fields must follow the defined data types:
+	- Integer: `userId`, `productId`, `sellerId`, `quantity`, `estimatedDeliveryDays`
+	- Float (decimal): `unitPrice`, `shippingFeeValue`, `totalPrice`
+	- String (enum): `shippingType` (STANDARD or EXPRESS)
+	- Boolean: `hasShippingFee`
+- Mandatory fields at order level:
+	- `userId`
+	- `totalPrice`
+- Mandatory fields at orderItems level:
+	- `productId`
+	- `quantity`
+	- `unitPrice`
+	- `sellerId`
+- Mandatory fields at shippingBySeller level:
+	- `sellerId`
+	- `hasShippingFee`
+	- `shippingType`
+	- `estimatedDeliveryDays`
+- `quantity` must be greater than 0.      
 - `hasShippingFee` determines whether a shipping fee will be applied:
 	- When `hasShippingFee = true`:
 		- `shippingFeeValue` is mandatory.
@@ -54,6 +73,8 @@ Verify that the Orders API correctly creates and retrieves purchase orders in a 
 		- If provided, it must be ignored in the total price calculation.
 - `shippingType` is mandatory for all sellers.
 - `estimatedDeliveryDays` is mandatory for all sellers.
+- `totalPrice` must be calculated by the system based on order items and shipping rules.
+- If `totalPrice` is provided in the request, it must be validated against the calculated value.
 - The final order total price is calculated as:
 ```text
 Total Price =
@@ -97,3 +118,4 @@ Sum of (quantity × unitPrice for all items)
   "totalPrice": 145.00
 }
 ``` 
+
