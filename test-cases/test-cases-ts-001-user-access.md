@@ -11,15 +11,12 @@ Validate access to the system using a previously registered user.
 
 **Preconditions:**  
 - User account registered in the system.
+- Application is accessible and loads the home screen successfully.
 
 **Test Steps:**  
->**Step 1**
-- **Action:** Open the application.
-- **Expected Result:** Application home screen is displayed.
-
->**Step 2**
-- **Action:** Fill in the username and password fields with valid user credentials.
-- **Expected Result:** User is successfully logged in.
+  - **Step 1**
+    - **Action:** Fill in the username and password fields with valid user credentials.
+    - **Expected Result:** User is successfully logged in.
 
 **Test Data:**  
 - Valid username.
@@ -42,15 +39,12 @@ Validate the warning message returned to the user.
 
 **Preconditions:**  
 - User account registered in the system.
+- Application is accessible and loads the home screen successfully.
 
 **Test Steps:**  
->**Step 1**
-- **Action:** Open the application.
-- **Expected Result:** Application home screen is displayed.
-
->**Step 2**
-- **Action:** Fill in the username with valid user credentials and then an invalid password.
-- **Expected Result:** User is not logged in and a warning message is displayed indicating that the password is incorrect.
+  - **Step 1**
+    - **Action:** Fill in the username with valid user credentials and then an invalid password.
+    - **Expected Result:** User is not logged in and a warning message is displayed indicating that the password is incorrect.
 
 **Test Data:**  
 - Valid username.
@@ -73,15 +67,12 @@ Validate whether the username field  is case-sensitive by using uppercase and lo
 
 **Preconditions:**  
 - User account registered in the system.
+- Application is accessible and loads the home screen successfully.
 
 **Test Steps:**  
->**Step 1**
-- **Action:** Open the application.
-- **Expected Result:** Application home screen is displayed.
-
->**Step 2**
-- **Action:** Fill in the username with the correct user credentials but typing uppercase and lowercase characters and then the correct password.
-- **Expected Result:** System behavior complies with the defined business rule for username case sensitivity.
+  - **Step 1**
+    - **Action:** Fill in the username with the correct user credentials but typing uppercase and lowercase characters and then the correct password.
+    - **Expected Result:** System behavior complies with the defined business rule for username case sensitivity.
 
 **Test Data:**  
 - Username of the existing user alternating between uppercase and lowercase caracteres.
@@ -104,15 +95,12 @@ Validate the warning message returned to the user.
 
 **Preconditions:**  
 - No active user account exists with the provided credentials.
+- Application is accessible and loads the home screen successfully.
 
 **Test Steps:**  
->**Step 1**
-- **Action:** Open the application.
-- **Expected Result:** Application home screen is displayed.
-
->**Step 2**
-- **Action:** Fill in the username and password fields with non-registered user credentials.
-- **Expected Result:** User is not logged in and a warning message is displayed indicating that the user does not exist.
+  - **Step 1**
+    - **Action:** Fill in the username and password fields with non-registered user credentials.
+    - **Expected Result:** User is not logged in and a warning message is displayed indicating that the user does not exist.
 
 **Test Data:**  
 - Username of a non registered user.
