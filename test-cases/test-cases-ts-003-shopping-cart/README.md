@@ -1,16 +1,21 @@
 # Test Cases – TS-003: Shopping Cart Validation
 
-This test suite validates the core behaviors of the Shopping Cart feature, ensuring correct product handling, price calculation, and data consistency according to business rules.
+These test cases validate the behavior of the Shopping Cart feature, focusing on business rules enforcement, price calculation accuracy, and data consistency during cart operations.
 
-The test cases cover both positive and negative flows, focusing on functional accuracy rather than UI behavior.
+The objective is to ensure that the system correctly handles product addition, quantity updates, price recalculation, and cart state integrity before order creation.
 
 ## Covered Test Cases
 - Add products to the shopping cart
-- Update product quantities
+- Update product quantities and validate recalculated totals
 - Remove products from the cart
-- Validate total price calculation
-- Handle empty cart scenarios
-- Validate system behavior for invalid or missing data
+- Validate cart behavior when empty
+- Ensure price consistency based on registered product values
+- Prevent invalid cart states (e.g. zero or invalid quantities)
 
-## Test Structure
-Each test case is maintained in an individual file to improve readability, traceability, and maintainability.
+## Key Quality Aspects Validated
+
+- Business rules enforcement at cart level  
+- Correct total price calculation  
+- Data consistency across cart operations 
+
+Each test case is documented individually to improve clarity, traceability, and maintainability.
