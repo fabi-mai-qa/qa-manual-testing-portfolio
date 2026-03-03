@@ -1,9 +1,9 @@
-# Test Scenario 003 – Validate Shopping Cart Total Price Calculation
+## Test Scenario 003 - Validate Shopping Cart Total Price Calculation
 
-## ID: TS-003
+### ID: TS-003
 
 **Description:**  
-Validate that the system correctly calculates the shopping cart total price based on the quantity of selected products.
+Validate that the system correctly calculates the shopping cart total price and maintains cart data consistency across user sessions and navigation events such as refresh, logout/login, and page transitions.
 
 **Preconditions:**  
 - Application is available in the test environment.
@@ -20,12 +20,13 @@ Validate that the system correctly calculates the shopping cart total price base
 - User refreshes the page.
 - User logs out and logs back into the system.
 - User accesses the shopping cart page again.
-- System maintains data and recalculates the total price accordingly.
 
 **Expected Result:**  
-- The shopping cart total price is updated correctly when products are added, removed, or when quantities are changed.
+- The shopping cart total price is correctly updated whenever products are added, removed, or quantities are changed.
+- Cart data is preserved after page refresh, navigation, and user session restart.
+- The recalculated total price remains consistent with the cart contents after each action.
 
 **Business Rules:**
-- Each product included in the order must have a registered price.
+- Each product included in the cart must have a registered price.
 - The system must correctly calculate the total price when products are added, removed, or when quantities are updated.
-- The system must persist cart data when the user refreshes the page, logs out, and logs back into the system. 
+- The system must persist cart data across page refresh, navigation, and user session restart.
