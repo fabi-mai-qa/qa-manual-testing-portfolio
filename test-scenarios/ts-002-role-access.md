@@ -1,9 +1,9 @@
-# Test Scenario 002 – Verify User Access Based on User Roles
+## Test Scenario 002 - Verify User Access Based on User Roles
 
-## ID: TS-002
+### ID: TS-002
 
 **Description:**  
-Validate that users have access to system functionalities according to their assigned roles (admin and non-admin).
+Validate that role-based authorization is correctly enforced, ensuring users can access only the system features allowed for their assigned role and are prevented from accessing restricted areas and resources.
 
 **Preconditions:**  
 - Application is available in the test environment.
@@ -12,14 +12,17 @@ Validate that users have access to system functionalities according to their ass
 
 **Scenario Flow:**  
 - User opens the application.
-- User logs in using admin credentials.
+- User logs in using admin credentials and verifies accessible system areas and actions.
 - User logs out.
-- User logs in using non-admin credentials.
+- User logs in using non-admin credentials and verifies restricted access behavior.
 
 **Expected Result:**  
-- Admin users have full access to all system screens and functionalities.
-- Non-admin users have restricted access and cannot view or access unauthorized system areas.
+- Admin users can access all system areas and perform privileged actions.
+- Non-admin users can access only allowed features and are prevented from viewing or interacting with system restricted areas.
+- Unauthorized access attempts are blocked by the system.
 
 **Business Rules:**
-- Users with admin roles must have full access to all system screens and functionalities.
-- Users with non-admin roles must have access only to features explicitly allowed for their role.
+- Role-based authorization must be enforced for all protected system resources.
+- Admin users must have access to all system screens and functionalities.
+- Non-admin users must be restricted to explicitly permitted features.
+- The system must prevent unauthorized access to restricted screens and actions.
