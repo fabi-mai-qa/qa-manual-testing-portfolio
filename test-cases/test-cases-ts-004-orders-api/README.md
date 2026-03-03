@@ -4,14 +4,24 @@ This test suite validates the behavior of the Orders API in a marketplace contex
 
 The focus is on business rules enforcement, price calculation, data consistency, authentication, and secure access to order data.
 
+This module is supported by the following documentation available in this directory:
+
+- [Orders API Documentation](orders-api-documentation.md) – Defines endpoints, request/response structures, and behavioral expectations.
+
+- [Marketplace Database Documentation](marketplace-database-documentation.md) – Describes the relational model, entity responsibilities, and data validation rules.
+
+Together, these documents provide the structural and functional context required to understand the test coverage defined in the TS-004.
+
 At the end of this README, you will find direct links to each individual test case for easy navigation.
 
 ## Scope
 The test cases of the TS-004 validates:
 
 - Order creation and retrieval flows
-- Shipping fee rules per seller
-- Data integrity between POST and GET
+- Seller-based shipping fee rules
+- Order snapshot integrity at purchase time
+- Price and total calculation accuracy
+- Data consistency between POST and GET operations
 - Authentication and error handling
 - Proper HTTP status codes
 
