@@ -1,25 +1,25 @@
-# Test Scenario 001 – Validate User Access to the System
+## Test Scenario 001 - Validate Authentication Flow for Registered Users
 
-## ID: TS-001
+### ID: TS-001
 
 **Description:**  
-Validate that the user can access the system using valid credentials and that access is denied when invalid credentials are provided.
+Validate the system authentication mechanism by ensuring registered users can successfully log in with valid credentials while unauthorized access is prevent when invalid or incomplete authentication data is provided.
 
 **Preconditions:**  
 - Application is available in the test environment.
-- User account is registered in the system.
+- At least one active registered user exists.
 
 **Scenario Flow:**  
-- User opens the application.
-- User enters login credentials.
-- System validates the provided credentials.
-- System allows or denies access based on validation.
+- User attempts authentication using system login interface.
+- System processes credential validation.
+- Access is granted or denied according to authentication result.
 
 **Expected Result:**  
-- User gains access to the system when valid credentials are used.
-- An appropriate error message is displayed when invalid credentials are used.
+- Valid users are authenticated and granted access to the system.
+- Invalid or incomplete credentials prevent authentication.
+- The system displays a clear and appropriate error message when access is denied.
 
 **Business Rules:**
-- Only registered users with valid credentials are allowed to access the system.
-- Users with invalid credentials must not be authenticated.
-- The system must deny access when required authentication data is missing.
+- Only active registered users with valid credentials may authenticate.
+- Authentication must fail for invalid credentials or missing required data.
+- Access to protected areas must only be available after successful authentication.
