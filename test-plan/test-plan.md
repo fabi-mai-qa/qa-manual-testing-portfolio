@@ -9,7 +9,7 @@ Testing focuses on manual validation of user workflows, APIs, and business rules
 - Validate functional behavior and system integrations.
 - Ensure acceptance criteria and business requirements are met.
 - Detect defects before production release.
-- Support release decisions with test results and risk visibility.
+- Support release decisions with test results.
 
 ## Scope of Testing
 
@@ -30,7 +30,7 @@ Testing focuses on manual validation of user workflows, APIs, and business rules
 Testing combines:
 - **Black box testing** focused on user workflows and expected behavior.
 - **Gray box testing** using API responses, database validation, and system technical outputs when needed.
-- **Risk-based prioritization** to focus on critical business flows and integrations.
+- **Business rule-driven testing** to validate critical workflows and system behavior.
 - **Exploratory testing** to identify unexpected behavior and usability issues.
 
 QA collaborates with developers and stakeholders to clarify expected behavior whenever possible.
