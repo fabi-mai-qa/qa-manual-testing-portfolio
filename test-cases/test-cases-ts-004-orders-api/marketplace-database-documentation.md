@@ -164,8 +164,8 @@ This table preserves the shipping type, fee, and delivery estimation associated 
 | order_id               | INT           | No | Yes| Yes      | References the associated order 		  	  	  |
 | seller_product_id       | INT           | No | Yes| Yes      | Seller-product offer linked to this shipping record	  |
 | has_shipping_fee        | CHAR(1)       | No | No | Yes      | Indicates whether a shipping fee was applied (Y/N) 	  |
-| shipping_fee_value      | NUMERIC(10,2) | No | No | Yes      | Shipping fee applied at purchase time		  	  |
-| shipping_type_id        | INT           | No | Yes| Yes      | Shipping type used for this seller-product at purchase time|
+| seller_product_shipping_fee_value | NUMERIC(10,2) | No | No | Yes      | Shipping fee applied at purchase time		  	  |
+| seller_product_shipping_type_id | INT           | No | Yes| Yes      | Shipping type used for this seller-product at purchase time|
 | estimated_delivery_days | INT           | No | No | Yes      | Delivery estimation at purchase time 	 	  	  |
 ---
 
@@ -215,4 +215,5 @@ The database must enforce the following rules and structural principles:
 	`seller_product_unit_price x order_item_quantity`
 - Order total must equal:
 	**Sum of order items + Sum of shipping fees**
+
 
