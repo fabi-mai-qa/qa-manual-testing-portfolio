@@ -2,7 +2,7 @@
 
 This repository presents a structured Manual QA Framework designed to demonstrate professional experience in software quality assurance.
 
-It includes completetest documentation aligned with industry best practices, covering test strategy, test planning, test scenarios, test cases (functional and API), bug reports, and test summary reports.
+It includes complete test documentation, covering test strategy, test planning, test scenarios, test cases (functional and API), bug reports, and test summary reports.
 
 The framework emphasizes structured test documentation, business rule validation, API testing, and database verification to provide consistent and reliable quality analysis.
 
