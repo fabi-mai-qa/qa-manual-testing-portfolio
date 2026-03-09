@@ -7,6 +7,8 @@ It focuses on the tables, relationships, and fields that must be verified to ens
 
 This documentation supports SQL validation queries used during API integration testing.
 
+For consistency, the SQL examples and queries in this document follow the syntax of Microsoft SQL Server, which may differ slightly from other database systems such as Oracle or MySQL.
+
 ## Scope
 The following entities are required in the database for the scope validation of Orders API integration testing:
 
@@ -215,5 +217,6 @@ The database must enforce the following rules and structural principles:
 	`seller_product_unit_price x order_item_quantity`
 - Order total must equal:
 	**Sum of order items + Sum of shipping fees**
+
 
 
