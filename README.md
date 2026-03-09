@@ -84,7 +84,7 @@ Strong analytical mindset and solution-oriented approach, with attention to deta
 
 ### Certifications:
 
-- ISTQB CTFL 4.0 - [View Certificate](https://www.linkedin.com/in/fabiana-soares-mai-aa8b72136/overlay/Certifications/255539623/treasury/?profileId=ACoAACFGrqABGp9pMkKgn6YWE4OM9vMF_jsSUqs)
+- ISTQB CTFL 4.0 - [View Certificate](https://www.linkedin.com/posts/activity-7341935741859512323-cCIW?utm_source=share&utm_medium=member_desktop&rcm=ACoAACFGrqABGp9pMkKgn6YWE4OM9vMF_jsSUqs)
 
 ### Languages:
 - English
