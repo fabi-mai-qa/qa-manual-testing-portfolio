@@ -1,37 +1,92 @@
-# QA Manual Framework
+# QA Manual Testing Portfolio
 
-This repository presents a structured Manual QA Framework designed to demonstrate professional experience in software quality assurance.
+This repository showcases a complete manual QA testing workflow, including test strategy, planning, test design, execution, bug reporting, and root cause analysis.
 
-It includes complete test documentation, covering test strategy, test planning, test scenarios, test cases (functional and API), bug reports, and test summary reports.
+The project demonstrates how a QA engineer structures and documents testing activities in a real-world testing scenario.
 
-The framework emphasizes structured test documentation, business rule validation, API testing, and database verification to provide consistent and reliable quality analysis.
+---
 
-## Scope
-- Functional testing (web, desktop)
+## Test Documentation and QA Artifacts
+
+This repository contains structured QA documentation produced during the testing process.
+
+- **Test Strategy and Planning**
+  - [Test Strategy](test-strategy/test-strategy.md)
+  - [Test Plan](test-plan/test-plan.md)
+
+- **Test Design**
+  - [Test Scenarios](test-scenarios/README.md)
+
+- **Test Cases**
+  - [TS-001 — User Access](test-cases/test-cases-ts-001-user-access/README.md)
+  - [TS-002 — Role Access](test-cases/test-cases-ts-002-role-access/README.md)
+  - [TS-003 — Shopping Cart](test-cases/test-cases-ts-003-shopping-cart/README.md)
+  - [TS-004 — Orders API](test-cases/test-cases-ts-004-orders-api/README.md)
+
+- **Technical Documentation (Supporting TS-004 Test Cases)**
+  - [API Documentation (Order API)](test-cases/test-cases-ts-004-orders-api/orders-api-documentation.md)
+  - [Database Documentation (Marketplace DB)](test-cases/test-cases-ts-004-orders-api/marketplace-database-documentation.md)
+
+- **Test Execution and Reporting**
+  - [Bug Report](bug-reports/orders-api-shipping-fee-validation.md)
+  - [Test Summary Report](test-summary/test-summary.md)
+
+---
+
+## Testing Scope
+
+- Functional testing
 - API testing
 - Database validation (SQL)
 - Test documentation and traceability
 
-## Technical Skills
-- Manual Testing
-- API Testing (Postman)
-- SQL (Oracle, SQL Server)
-- Test Design Techniques
+---
 
-## Tools
+## Repository Structure
+
+Each folder contains detailed documentation and traceable testing artifacts.
+
+qa-manual-testing-portfolio
+
+```
+qa-manual-testing-portfolio
+│
+├── test-strategy
+├── test-plan
+├── test-scenarios
+├── test-cases
+│		├── test-cases-ts-001-user-access
+│		├── test-cases-ts-002-role-access
+│		├── test-cases-ts-003-shopping-cart
+│		└── test-cases-ts-004-orders-api
+├── bug-reports
+└── test-summary
+```
+
+---
+
+## Tools and Technologies
+
+- Manual Testing
+- Postman (API Testing)
+- SQL (Oracle / SQL Server)
 - Jira
 - Notion
 - Visual Studio Code
 
-## Certifications
-- ISTQB CTFL 4.0
-
-## Languages
-- English
-- Spanish
-- Portuguese (Native)
+---
 
 ## About the Author
-Software QA Analyst with experience in web, mobile, desktop, and API testing environments. Currently focused primarily on desktop applications and API validation.
 
-Strong analytical mindset and solution-oriented approach, with attention to detail and structured documentation practices. Experienced in collaborating with cross-functional teams to ensure product quality aligned with business requirements.
+Software QA Analyst experienced in web, desktop, mobile, and API testing, with strong focus on structured test documentation, defect analysis, and root cause analysis.
+
+Strong analytical mindset and solution-oriented approach, with attention to detail and experienced in collaborating with cross-functional teams to ensure product quality aligned with business requirements.
+
+### Certifications:
+
+- ISTQB CTFL 4.0 - [View Certificate](https://www.linkedin.com/in/fabiana-soares-mai-aa8b72136/overlay/Certifications/255539623/treasury/?profileId=ACoAACFGrqABGp9pMkKgn6YWE4OM9vMF_jsSUqs)
+
+### Languages:
+- English
+- Spanish
+- Portuguese (native)
