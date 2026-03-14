@@ -5,6 +5,10 @@ The Orders API is applying a shipping fee even when the associated shipping type
 During the order creation, the payload correctly specifies that the seller does not apply shipping fees. The database configuration also indicates that the selected shipping type does not require a shipping fee.
 However, the system persists a shipping fee value and includes it in the order total calculation.
 
+► ***To better understand this bug report, it is recommended to review the following supporting documentation first:***
+  - [API Documentation (Order API)](test-cases/test-cases-ts-004-orders-api/orders-api-documentation.md)
+  - [Database Documentation (Marketplace DB)](test-cases/test-cases-ts-004-orders-api/marketplace-database-documentation.md)
+
 ---
 
 ## Environment
