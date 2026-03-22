@@ -1,14 +1,31 @@
 # QA Manual Testing Portfolio
 
-This repository showcases a complete manual QA testing workflow, including test strategy, planning, test design, execution, bug reporting, and root cause analysis.
+This repository showcases a complete manual QA testing workflow, demonstrating how test strategy, test design, API validation, and defect analysis are applied in a real-world scenario.
 
-The project demonstrates how a QA engineer structures and documents testing activities in a real-world testing scenario.
+It includes a practical example of identifying a business rule defect in an Orders API, where incorrect shipping fee calculation was detected through API response analysis and database validation.
+
+---
+
+## Featured Scenario — Orders API (TS-004)
+
+The most complete example in this portfolio is the **Orders API testing scenario (TS-004)**, which demonstrates a complete QA analysis across API behavior, business rules, and database validation:
+
+- API testing and validation
+- Database verification using SQL
+- Business rule validation
+- Defect identification and root cause analysis
+
+Key artifacts:
+
+- [Test Cases — TS-004 Orders API](test-cases/test-cases-ts-004-orders-api/README.md)
+- [Bug Report — Shipping Fee Validation Issue](bug-reports/orders-api-shipping-fee-validation.md)
+- [Test Summary Report](test-summary/test-summary.md)
 
 ---
 
 ## Test Documentation and QA Artifacts
 
-This repository contains structured QA documentation produced during the testing process.
+This repository contains structured QA documentation based on a simulated testing process reflecting real-world scenarios.
 
 - **Test Strategy and Planning**
   - [Test Strategy](test-strategy/test-strategy.md)
